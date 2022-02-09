@@ -1,3 +1,7 @@
+:root {
+  --color-pink: #FF9595;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -29,7 +33,7 @@ header {
 
   header li:hover {
     transform: scale(1.05);
-    border-bottom: 4px solid #FF9595;
+    border-bottom: 4px solid var(--color-pink);
   }
   
   header li a {
@@ -49,7 +53,7 @@ header {
   }
 
  .title-header:hover {
-  color: #FF9595;
+  color: var(--color-pink);
  } 
 
   ul {
@@ -85,6 +89,10 @@ header {
     text-align: left;
   }
 
+  ul li a {
+    color: var(--color-pink);
+  }
+
   .hide {
     display: inline-flex;
     float: right;
@@ -94,4 +102,5 @@ header {
   display: none;
 
   }
+
 }
