@@ -1,3 +1,3 @@
     $(".hide").on('click', function() {
-      $("nav ul").toggle('slow');
+      $("nav ul").slideToggle(600);
     })

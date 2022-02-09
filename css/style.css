@@ -50,6 +50,7 @@ header {
     padding: 12px;
     font-size: 27px;
     font-weight: 600;
+    cursor: default;
   }
 
  .title-header:hover {
