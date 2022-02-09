@@ -39,7 +39,7 @@ header {
   }
   
   .title-header {
-    transition: all .5s;
+    transition: all .2s;
     color: #fff;
     text-decoration: none;
     display: inline-flex;
@@ -60,3 +60,38 @@ header {
    text-align: center;
    padding: 30px;
  } 
+
+ #menu-btn {
+  cursor: pointer;
+  float: right;
+  height: 30px;
+  margin: 25px;
+  width: 30px;
+}
+
+
+.hide {
+  padding: 16px;
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  ul li {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+  }
+
+  .hide {
+    display: inline-flex;
+    float: right;
+  }
+
+  nav ul {
+  display: none;
+
+  }
+}
