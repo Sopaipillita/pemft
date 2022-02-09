@@ -89,8 +89,17 @@ header {
     text-align: left;
   }
 
+  header li:hover {
+    border-bottom: none;
+  }
+
   ul li a {
     color: var(--color-pink);
+    padding: 2px;
+  }
+
+  ul li a:hover {
+    border-bottom: 3px solid var(--color-pink);
   }
 
   .hide {
