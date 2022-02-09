@@ -83,6 +83,38 @@ header {
   display: none;
 }
 
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  padding: 16px;
+  text-align: center;
+  transition: all .1s;
+  background-color: #fff;
+  border: 1px solid rgb(229, 232, 235);
+  border-radius: 11px;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgb(91 91 91 / 20%);
+}
+
+
+/* reponsive */
 @media (max-width: 768px) {
   ul li {
     width: 100%;
@@ -113,4 +145,17 @@ header {
 
   }
 
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
 }
+
