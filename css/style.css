@@ -99,6 +99,11 @@ header {
   float: left;
   width: 25%;
   margin: 0 10px;
+  transition: all .1s;
+}
+
+.column:hover {
+  transform: scale(1.027);
 }
 
 .row {
@@ -152,6 +157,7 @@ header {
 img {
   width: 100%;
   border-radius: 10px 10px 0 0;
+  image-rendering: pixelated;
 }
 
 /* reponsive */
@@ -186,7 +192,7 @@ img {
   }
 
   .column {
-    width: 100%;
+    width: 95%;
     display: block;
     margin-bottom: 20px;
   }
@@ -196,6 +202,7 @@ img {
     margin: 1rem;
     padding: 1rem;
     text-align: center;
+    width: auto;
   }
 }
 
