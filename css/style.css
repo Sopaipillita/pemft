@@ -63,7 +63,8 @@ header {
 
  p {
    text-align: center;
-   padding: 30px;
+   padding: 5px 10px;
+    margin: 4px;
  } 
 
  #menu-btn {
@@ -85,8 +86,8 @@ header {
 
 .column {
   float: left;
-  width: 30%;
-  padding: 0 10px;
+  width: 25%;
+  margin: 0 10px;
 }
 
 .row {
@@ -101,7 +102,6 @@ header {
 }
 
 .card {
-  padding: 16px;
   text-align: center;
   transition: all .1s;
   background-color: #fff;
@@ -113,6 +113,10 @@ header {
   box-shadow: 0 4px 8px 0 rgb(91 91 91 / 20%);
 }
 
+img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
 
 /* reponsive */
 @media (max-width: 768px) {
