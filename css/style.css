@@ -1,5 +1,6 @@
 :root {
-  --color-pink: #FF9595;
+  --color-pink-hover: #e99090;
+   --color-pink: #FF9595;
 }
 
 * {
@@ -11,6 +12,12 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: whitesmoke;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 header {
@@ -40,7 +47,12 @@ header {
     color: #fafafa;
     text-decoration: none;
     font-size: 17px;
+    font-weight: 600;
   }
+
+  header li a:hover {
+    color: #dbdbdd;
+  } 
   
   .title-header {
     transition: all .2s;
@@ -74,7 +86,6 @@ header {
   margin: 25px;
   width: 30px;
 }
-
 
 .hide {
   padding: 16px;
@@ -111,6 +122,31 @@ header {
 
 .card:hover {
   box-shadow: 0 4px 8px 0 rgb(91 91 91 / 20%);
+}
+
+.a-author {
+  display: block;
+  color: var(--color-pink);
+  text-decoration: none;
+}
+
+.a-author:hover {
+    color: var(--color-pink-hover);
+}
+
+.data-author {
+  display: inline-flex;
+  margin: 0 5px 15px 5px;
+}
+
+.data-author h3 {
+  font-size: 18px;
+}
+
+.data-author p {
+  display: inline-flex;
+  padding: 0;
+  margin: 0 4px 0 0;
 }
 
 img {
