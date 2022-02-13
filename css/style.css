@@ -76,7 +76,7 @@ header {
 
  p {
    text-align: center;
-   padding: 3px 15px 8px;
+   padding: 3px 5px 8px;
     margin: 2px;
     color: #949292;
     font-weight: 500;
@@ -176,6 +176,10 @@ img {
   image-rendering: pixelated;
 }
 
+#showless {
+  display: none;
+}
+
 footer {
   position: fixed;
   left: 0;
@@ -185,6 +189,11 @@ footer {
   color: white;
   text-align: center;
   padding: 5px;
+}
+
+.description-card {
+  overflow: hidden;
+  height: 4rem;
 }
 
 /* reponsive */
