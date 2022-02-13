@@ -106,7 +106,7 @@ header {
 .column {
   float: left;
   width: 32%;
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 10px;
   transition: all .1s;
 }
