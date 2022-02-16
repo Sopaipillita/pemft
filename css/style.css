@@ -12,6 +12,8 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: whitesmoke;
+  display:flex; 
+  flex-direction:column;
 }
 
 .container:after {
@@ -101,6 +103,7 @@ header {
 
 .main {
   margin-top: 20px;
+  min-height: 100%;
 }
 
 .column {
@@ -109,10 +112,6 @@ header {
   max-width: 300px;
   margin: 0 10px;
   transition: all .1s;
-}
-
-.column:hover {
-  transform: scale(1.016);
 }
 
 .row {
@@ -180,20 +179,26 @@ img {
   display: none;
 }
 
+
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #666;
-  color: white;
-  text-align: center;
-  padding: 5px;
+  min-height:50px;
+  margin-top:auto;
 }
 
 .description-card {
   overflow: hidden;
   height: 4rem;
+  transition: all .3s;
+}
+
+.btn-description {
+  margin: 0 5px 10px 5px;
+  color: #fff;
+  padding: 7px;
+  background: #000;
+  border-radius: 18px;
+  display: inline-block;
+  text-decoration: none;
 }
 
 /* reponsive */
